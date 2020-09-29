@@ -1,0 +1,194 @@
+@import "variables";
+body {
+  margin: 0px;
+  background-color: $main-dark;
+}
+
+h2,
+h3,
+h4 {
+  color: $contrast-dark;
+  font-family: $primary-font;
+}
+
+p {
+  color: $contrast-dark;
+  font-family: $secondary-font;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+header {
+  display: flex;
+  background-color: $main-dark;
+  background-image: url('/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+
+  .header-container {
+    display: flex;
+    color: $main-light;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 45px;
+    position: relative;
+    height: 85%;
+    width: 100%;
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+
+}
+
+nav {
+  ul{
+    background-color: $main-dark;
+    margin: 0px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+    li {
+      list-style: none;
+      margin: 0 15px;
+      display: inline-block;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          color: rgb(179, 1, 1);
+        }
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+// ------------------
+// Portafolio
+// ------------------
+
+#portafolio {
+  background-color: $secondary-dark;
+
+  .row {
+    margin-bottom: 35px;
+  }
+
+  .columns {
+    background: inherit;
+
+    p {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+  }
+}
+
+// ------------------
+// Equipo
+// ------------------
+
+#equipo {
+  background-color: $main-dark;
+
+  .miembro {
+    img {
+      width: 75%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 7px solid $team-border;
+    }
+
+    h3 {
+      margin: 5px 0;
+    }
+  }
+}
+
+// -------------------
+// CLIENTES
+// -------------------
+
+#clientes {
+  background-color: $secondary-dark;
+  
+  img {
+    width: 55%;
+    // filter: blur(5px);
+    // transition: all 0.3s;
+
+    // &:hover {
+    //   filter: blur(0);
+    // }
+  }
+}
+
+// -------------------
+// FOOTER
+// -------------------
+
+footer {
+  padding: 30px;
+  color: $contrast-dark;
+
+  .social-links {
+    a {
+      background: $main-dark;
+      border-radius: 50%;
+      color: $contrast-dark;
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      width: 25px;
+
+      transition: all 0.3s linear;
+
+      &:hover {
+        background: $contrast-dark;
+      }
+    }
+  }
+
+  .footer-links {
+    text-align: right;
+
+    a {
+      color: $contrast-dark;
+      display: block;
+      margin-left: 15px;
+      text-decoration: none;
+      float: right;
+    }
+  }
+}
