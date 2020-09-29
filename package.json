@@ -13,9 +13,9 @@
   "author": "alexdlveliz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexdlveliz/entorno-base-de-desarrollo/issues"
+    "url": "https://github.com/alexdlveliz/sitio-web-cuarentena.git/issues"
   },
-  "homepage": "https://github.com/alexdlveliz/entorno-base-de-desarrollo#readme",
+  "homepage": "https://github.com/alexdlveliz/sitio-web-cuarentena.git#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
