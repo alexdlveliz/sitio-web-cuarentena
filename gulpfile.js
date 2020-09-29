@@ -46,7 +46,7 @@ const minifyImg = done => {
 const watchTask = done => {
     watch(
         [files.scssPath, files.htmlPath],
-        series(compileScss, minifyCss, minifyJs, reload)
+        series(compileScss, minifyCss, minifyJs, minifyImg, reload)
     );
 }
 
