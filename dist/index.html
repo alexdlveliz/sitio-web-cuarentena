@@ -15,17 +15,10 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#positivo">Cosas positivas</a></li>
-                <li><a href="#negativo">Cosas negativas</a></li>
-            </ul>
-        </nav>
         <div class="header-container">
             <!-- <img src="images/banner.jpeg" alt="Banner"> -->
             <div class="header-content text-center">
-                <h1>Erik Alexander de León Véliz</h1>
+                <h1>Erick Alexander de León Véliz</h1>
                 <p>
                     Soy un estudiante de 5to año de ingeniería.
                     Me gusta programar, jugar videojuegos y bailar.
@@ -36,11 +29,40 @@
                 </p>
             </div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#positivo">Cosas positivas</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#negativo">Cosas negativas</a></li>
+                <li><a href="#redes">Redes sociales</a></li>
+            </ul>
+        </nav>
     </header>
+
+
+    <main id="sobre-mi" class="text-center">
+        <h1>Sobre mí</h1>
+        <div>
+            <img src="images/alex.jpg" alt="Alex">
+            <p>
+                Soy Erick Alexander de León Véliz, tengo 22 años y estudio ingeniería en sistemas en la universidad
+                actualmente.<br>
+                Soy una persona algo introvertida, no me gusta hablar demasiado a menos que sea de un tema que me
+                apasione.<br>
+                A lo largo del tiempo siempre me ha costado hacer amigos, pero afortunadamente en la universidad
+                encontré un
+                grupo de personas con las que me llevo muy bien, cosa que honestamente no esperaba.<br>
+                Mis pasatiempos incluyen jugar videojuegos, escuchar música y bailar. Últimamente no he podido bailar y
+                he olvidado muchas cosas, espero poder hacerlo pronto al acabar la carrera.<br>
+                Tengo novia desde el inicio de mis estudios universitarios, es algo que me ha ayudado mucho a crecer y a sentirme feliz, estudia
+                conmigo y formamos un muy buen equipo.
+            </p>
+        </div>
+    </main>
 
     <main id="positivo" class="text-center">
         <h1>Cosas positivas que he podido hacer en la cuarentena</h1>
-
         <section class="cards">
             <div class="card">
                 <h3>Leer un libro</h3>
@@ -51,17 +73,69 @@
                     Decidí intentar de nuevo
                 </p>
                 <p>El libro se llama <strong>El hombre invicible</strong></p>
-                <img src="./images/hombre-invisible.jpg" alt="El hombre invicible">
+                <img src="images/hombre-invisible.jpg" alt="El hombre invicible">
             </div>
             <div class="card">
-                <h3>Mejorar en mis videojuegos</h3>
-                
+                <h3>Mejorar en videojuegos</h3>
+                <p>
+                    Con el tiempo dentro de casa a causa de la cuarentena, he aprovechado para practicar más en los
+                    videojuegos que uso habitualmente ya que se basan en competencias en línea, un amigo mío me ha
+                    ayudado en ese aspecto.
+                </p>
+                <p>El juego que más uso es <strong>Starcraft II</strong></p>
+                <img src="images/starcraft.jpg" alt="Starcraft">
             </div>
             <div class="card">
                 <h3>Tomar clases</h3>
+                <p>
+                    En el tiempo de cuarentena he empezado a buscar cursos en línea para complementar lo que he
+                    aprendido en la universidad, es difícil empezar porque soy algo perezoso, pero he logrado terminar
+                    algunos cursos y gracias a eso he aprendido bastante.
+                </p>
+                <img src="images/estudio.jpg" alt="Estudio">
             </div>
         </section>
     </main>
+
+    <main id="negativo" class="text-center">
+        <h1>Cosas negativas de la cuarentena</h1>
+        <section class="cards">
+            <div class="card">
+                <h3>El flujo de clases</h3>
+                <p>
+                    La transición a una modalidad en línea para las clases ha sido por mucho lo más complicado.<br>
+                    Nadie estaba preparado para usar las plataformas en línea para las clases, se ha vuelto difícil
+                    retener la información de buena manera, y he tenido que buscar fuentes adicionales de información
+                    para complementar lo aprendido en algunas clases.<br>
+                    Me doy cuenta de lo importante que es la presencia en el proceso de aprendizaje.
+                </p>
+            </div>
+            <div class="card">
+                <h3>La salud de mi familia</h3>
+                <p>
+                    Mi familia es diferente, mi familia sí disfruta salir a pasear, cosa que se ha vuelto peligrosa en
+                    estos días debido al virus, por lo que nos quedamos en casa y esto ha afectado el estado de ánimo de
+                    mi familia.<br>
+                    Me preocupan, la salud psicológica de las personas es un tema importante, el confinamiento no es
+                    algo que se deba tomar a la ligera.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="redes">
+        <div class="container">
+            <div class="four columns">Redes sociales</div>
+            <div class="four columns text-center social-links">
+                <a href="https://www.facebook.com/alex.dlv.1/"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <div class="four columns footer-links">
+                <a href="#">Volver al inicio</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

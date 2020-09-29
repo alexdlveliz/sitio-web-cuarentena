@@ -1,9 +1,15 @@
 @import "variables";
+
+// --------------------
+// GENERAL
+// --------------------
+
 body {
   margin: 0px;
   background-color: $main-dark;
 }
 
+h1,
 h2,
 h3,
 h4 {
@@ -21,8 +27,39 @@ section {
   padding-bottom: 80px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .card {
+    width: calc(100% / 3);
+    margin: 20px;
+    padding: 3px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #27293b, #2e3047);
+    box-shadow:  10px 10px 33px #202131, 
+                -10px -10px 33px #363953;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+
+// --------------------
+// HEADER
+// --------------------
+
 header {
   display: flex;
+  flex-direction: column;
   background-color: $main-dark;
   background-image: url('/images/banner.jpg');
   background-repeat: no-repeat;
@@ -37,7 +74,6 @@ header {
     padding: 45px;
     position: relative;
     height: 85%;
-    width: 100%;
 
     .header-content {
       display: flex;
@@ -52,64 +88,95 @@ header {
 }
 
 nav {
-  ul{
-    background-color: $main-dark;
-    margin: 0px;
-    text-align: right;
-    position: fixed;
+  display: flex;
+  background-color: $secondary-dark;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    top: 0;
-    z-index: 10;
+    height: 100%;
 
     li {
       list-style: none;
-      margin: 0 15px;
-      display: inline-block;
-
+      
+      &:nth-child(3) {
+        font-size: 30px;
+      }
+      
       a {
-        color: $white;
+        color: $contrast-dark;
         text-decoration: none;
         text-transform: uppercase;
+        transition: all 0.3s;
+        filter: blur(2px);
 
         &:hover {
-          color: rgb(179, 1, 1);
+          color: red;
+          filter: blur(0);
         }
       }
     }
   }
 }
 
-.text-center {
-  text-align: center;
+// --------------------
+// SOBRE MÍ
+// --------------------
+
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+  
+    img {
+      width: calc(100% / 3);
+    }
+  
+    p {
+      text-align: justify;
+      width: calc(100% / 3);
+    }
+  }
 }
 
 // --------------------
-// Información positiva
+// INFORMACIÓN POSITIVA
 // --------------------
 
 #positivo {
-  color: $contrast-dark;
+  
   display: flex;
   flex-direction: column;
 
   .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
     .card {
-      width: calc(100% / 3);
-      padding: 3px;
-
       img {
         width: 50%;
+      }
+
+      img[src="images/starcraft.jpg"] {
+        width: 80%;
       }
     }
   }
 }
 
+// ------------------
+// INFORMACIÓN NEGATIVA
+// ------------------
 
+#negativo {
+  display: flex;
+  flex-direction: column;
+}
 
 
 // ------------------
@@ -201,6 +268,9 @@ footer {
 
       &:hover {
         background: $contrast-dark;
+        i {
+          color: $main-dark;
+        }
       }
     }
   }
