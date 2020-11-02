@@ -1,5 +1,5 @@
 // Funciones de la API de gulp
-const { src, dest, series, watch } = require('gulp');
+const { src, dest, series, watch, task } = require('gulp');
 
 // Paquetes importados
 const sass = require('gulp-sass');
@@ -7,6 +7,7 @@ const minJS = require('gulp-minify');
 const minCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync');
 const imagemin = require('gulp-imagemin');
+const gulpCleanCss = require('gulp-clean-css');
 
 
 // Constantes de trabajo
@@ -63,5 +64,7 @@ const reload = done => {
     browserSync.reload();
     done();
 }
+
+exports.build = series(compileScss, minifyCss, minifyJs, minifyImg);
 
 exports.default = series(compileScss, minifyCss, minifyJs, minifyImg, serve, watchTask);
