@@ -7,11 +7,5 @@ workflows:
       - node/test
   build-project:
     jobs:
-      build:
-        machine:
-          image: ubuntu-2004:202010-01
-        steps:
-          - run:
-             name: "building"
-             command: npm run build
+      - node/build
 
